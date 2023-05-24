@@ -76,4 +76,4 @@ I am an aspiring web developer interested in becoming well-versed in full-stack 
 
 Email: ima2132@columbia.edu 
 
-GitHub: github.com/ima2132 
+GitHub: https://github.com/ima2132
