@@ -13,7 +13,7 @@ The main objective of this project is to understand that developers do not alway
 
 ## Usage
 
-You can use this gist file to comprehend regular expressions (regex) as a concept. Regex can be quite resourceful for tasks such as data validation, search patterns, or string manipulation. 
+Regex can be quite resourceful for tasks such as data validation, search patterns, or string manipulation. You can use this gist file to comprehend regular expressions (regex) as a concept.
 
 This specific gist contains a tutorial breaking down the regex components of email addresses. 
 
