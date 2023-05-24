@@ -1,13 +1,17 @@
 # Regex Tutorial: Matching Email Addresses
 
-Regex, short for regular expression, is essentially a sequence of characters that defines a specific search pattern. In code or search algorithms, regular expressions are used to find particular patterns of characters within a string. Regex can be utilized for replacing specific characters or sequences within a string and are also commonly used to validate input. This is a valuable asset when we encounter extensive code bases.
+Regex, short for regular expression, is essentially a sequence of characters that defines a specific search pattern. In code or search algorithms, regular expressions are used to find particular patterns of characters within a string. 
+
+Regex can be utilized for replacing specific characters or sequences within a string and are also commonly used to validate input. This is a *valuable* asset when we encounter extensive code bases.
 
 ## Summary
 As we have observed above, regex entails multiple purposes in programming and data manipulation. Regular expressions are instrumental in working with email addresses. When applied to email addresses, regex allows us to validate and extract email-related information from a given string. 
 
 In other words, regex vastly enhances our ability to work with email addresses, as it provides both flexibility and accuracy in processing and validating email addresses. 
 
-For this tutorial, we will be breaking down each section of the regex and covering what each character indicates. Below is the regex for email addresses:
+For this tutorial, we will be breaking down each section of the regex and covering what each character indicates. 
+
+Below is the regex for email addresses:
 
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
@@ -39,7 +43,7 @@ In the email regex, the quantifier is applied to the *last* character of the str
 
 `([a-z.]{2,6})` 
 
-This indicates that the final part of an email address must consist of 2-6 characters.
+This indicates that the final part of an email address *must* consist of 2-6 characters.
 
 ### Character Classes
 Character classes define sets of characters that are going to be matched within a string. 
@@ -48,7 +52,7 @@ In the email address regex pattern, there are a few character classes employed:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-One example is `\d`, which represents the digital character class, or the range 0-9. 
+One example is `\d`, which represents the digital character class, or the numerical range [0-9]. 
 
 ### Grouping and Capturing
 A group in regex refers to a set of regex patterns that will be matched as a *unit* in your string. 
@@ -57,6 +61,34 @@ These groups can be identified by enclosing them within parentheses
 `(())`. 
 ### Bracket Expressions
 Bracket expressions in regex are used to define a set of characters that will be matched *against* a string. These expressions are enclosed within square brackets `([])`, allowing you to specify a range or list of characters to be considered for a match.
+
+There are 3 instances of bracket expressions in the email regex: 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+1. `[a-z0-9_\.-]` 
+
+The first section of the email regex tells us that we can do/include the following in our email addresses:
+* We can include lowercase letters from a to z.
+* We *cannot* use uppercase letters because they are not specified.
+* We can use numbers from 0 to 9.
+* We can also include the special characters _, , ., and -.
+
+2. `[\da-z\.-]`
+
+For the second set of brackets, we specify what is allowed in the part of the email address *after* the @ symbol:
+* We can start with any digit, as indicated by `\d`.
+* We can use lowercase letters from a to z.
+* We can also include the special characters `_`, `.`, and `-`.
+
+3. `[a-z\.]`
+ 
+The last set of brackets outlines the possibilities for the *last* part of the email address following the dot `(.)` symbol:
+* We can use any lowercase letters from a to z.
+* We can also include a period (.) as a special character.
+
+These brackets essentially define the character ranges and special characters that are valid for each section of the email address.
+
 
 ### Escaped Characters
 The`(\)`backslash is a character escape. This means that this character should *not* be denoted literally. In the email regex:
@@ -76,4 +108,4 @@ I am an aspiring web developer interested in becoming well-versed in full-stack 
 
 Email: ima2132@columbia.edu 
 
-GitHub: github.com/ima2132 
+GitHub: https://github.com/ima2132
