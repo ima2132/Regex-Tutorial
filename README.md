@@ -2,9 +2,7 @@
 
 ## Table of Contents
 - [Description](#description)
-- [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Questions](#questions)
 
 ## Description 
@@ -13,21 +11,12 @@ Full-stack development can often be overwhelming and daunting. Although there ca
 
 The main objective of this project is to understand that developers do not always write code -- there are instances where they have to write *about* code. By creating a regex tutorial and breaking down each part of the expression, you can gain the ability to both teach and learn something new in this field. 
 
-
-## Installation 
-
-N/A
-
 ## Usage
 
-You can use this gist file to comprehend regular expressions (regex) as a concept. This specific gist contains a tutorial breaking down the regex components of email addresses. 
+You can use this gist file to comprehend regular expressions (regex) as a concept. Regex can be quite resourceful for tasks such as data validation, search patterns, or string manipulation. 
 
-## License 
-
-N/A
-
-For more information on other licenses, please visit choosealicense.com 
+This specific gist contains a tutorial breaking down the regex components of email addresses. 
 
 ## Questions 
 
-If you have any questions about this tutorial, please open an issue! 
+If you would like to provide feedback, suggest improvements, or report any issues while following the tutorial, please open an issue! 
