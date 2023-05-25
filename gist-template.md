@@ -68,15 +68,15 @@ There are 3 instances of bracket expressions in the email regex:
 
 1. `[a-z0-9_\.-]` 
 
-The first section of the email regex tells us that we can do/include the following in our email addresses:
+The first section of the email regex tells us what we can do/include the following in our email addresses:
 * We can include lowercase letters from a to z.
 * We *cannot* use uppercase letters because they are not specified.
 * We can use numbers from 0 to 9.
-* We can also include the special characters _, , ., and -.
+* We can also include the special characters `_`,  `.`, and `-`.
 
 2. `[\da-z\.-]`
 
-For the second set of brackets, we specify what is allowed in the part of the email address *after* the @ symbol:
+For the second set of brackets, we specify what is allowed in the part of the email address *after* the `@` symbol:
 * We can start with any digit, as indicated by `\d`.
 * We can use lowercase letters from a to z.
 * We can also include the special characters `_`, `.`, and `-`.
@@ -85,9 +85,7 @@ For the second set of brackets, we specify what is allowed in the part of the em
  
 The last set of brackets outlines the possibilities for the *last* part of the email address following the dot `(.)` symbol:
 * We can use any lowercase letters from a to z.
-* We can also include a period (.) as a special character.
-
-These brackets essentially define the character ranges and special characters that are valid for each section of the email address.
+* We can also include a period `(.)` as a special character.
 
 
 ### Escaped Characters
